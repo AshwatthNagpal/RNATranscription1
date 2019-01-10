@@ -18,5 +18,8 @@ describe 'dna_to_rna' do
   it 'check GGTTAACC' do
     expect(dna_to_rna("GGTTAACC")).to eq "CCAAUUGG"
   end
+  it 'check CCAATTGG' do
+    expect(dna_to_rna("CCAATTGG")).to eq "GGUUAACC"
+  end
 
 end
