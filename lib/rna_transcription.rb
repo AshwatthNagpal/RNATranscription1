@@ -9,6 +9,8 @@ def dna_to_rna(dna = "")
       return "C"
     elsif i == "T"
       return "A"
+    elsif i == "A"
+      return "U"
     end
   end
 end
