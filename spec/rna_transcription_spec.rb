@@ -15,5 +15,8 @@ describe 'dna_to_rna' do
   it 'complement of adenine to uracil' do
     expect(dna_to_rna("A")).to eq "U"
   end
+  it 'check GGTTAACC' do
+    expect(dna_to_rna("GGTTAACC")).to eq "CCAAUUGG"
+  end
 
 end

@@ -2,15 +2,17 @@ def dna_to_rna(dna = "")
   if dna.empty?
     ""
   end
+  rna = ""
   dna.upcase.each_char do |i|
     if i == "C"
-      return "G"
+      rna += "G"
     elsif i == "G"
-      return "C"
+      rna += "C"
     elsif i == "T"
-      return "A"
+      rna += "A"
     elsif i == "A"
-      return "U"
+      rna += "U"
     end
   end
+  rna
 end
